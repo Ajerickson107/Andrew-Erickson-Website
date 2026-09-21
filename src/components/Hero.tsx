@@ -7,10 +7,33 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
-  const [imgError, setImgError] = useState(false);
   const [customPhoto] = useState<string | null>(() => {
     return localStorage.getItem('aje_profile_photo') || null;
   });
+
+  const photoSources = React.useMemo(() => {
+    const list = [
+      customPhoto,
+      personalInfo.photoUrl,
+      '/profile.jpg',
+      '/profile.png',
+      '/IMG_4475.jpg',
+      '/IMG_4475.png',
+      '/headshot.jpg',
+    ].filter((src): src is string => Boolean(src));
+    return Array.from(new Set(list));
+  }, [customPhoto]);
+
+  const [currentPhotoIdx, setCurrentPhotoIdx] = useState(0);
+  const [allPhotosFailed, setAllPhotosFailed] = useState(false);
+
+  const handleImageError = () => {
+    if (currentPhotoIdx + 1 < photoSources.length) {
+      setCurrentPhotoIdx((prev) => prev + 1);
+    } else {
+      setAllPhotosFailed(true);
+    }
+  };
 
   return (
     <section
@@ -145,13 +168,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               <div className="bg-white dark:bg-[#111726] border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-lg shadow-slate-200/50 dark:shadow-black/50 space-y-4">
                 {/* Photo Frame with Headshot Image */}
                 <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-gradient-to-tr from-emerald-100 via-sky-50 to-slate-100 dark:from-slate-900 dark:via-emerald-950/30 dark:to-sky-950/30 border border-slate-200 dark:border-slate-700/80 shadow-inner flex items-center justify-center group">
-                  {customPhoto || !imgError ? (
+                  {!allPhotosFailed && photoSources[currentPhotoIdx] ? (
                     <img
-                      src={customPhoto || '/IMG_4475.jpg'}
+                      src={photoSources[currentPhotoIdx]}
                       alt="Andrew John Erickson"
-                      onError={() => {
-                        if (!customPhoto) setImgError(true);
-                      }}
+                      onError={handleImageError}
                       className="w-full h-full object-cover object-center transition-all duration-300 group-hover:scale-102"
                       referrerPolicy="no-referrer"
                     />

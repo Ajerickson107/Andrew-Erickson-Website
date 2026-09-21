@@ -9,6 +9,7 @@ export const personalInfo = {
   phone: "(505) 269-4251",
   email: "ajerickson107@gmail.com",
   eduEmail: "aerickson107@unm.edu",
+  photoUrl: "/IMG_4475.jpg",
   clearance: "DOE Q Clearance (Active)",
   clearanceDetails: "Department of Energy Q-Level Security Clearance (Active)",
   links: {
