@@ -31,10 +31,10 @@
   }
 }
 
-/* Systems & Field Notes Grid texture (Subtle, non-distracting) */
+/* Subtle background grid texture */
 .systems-grid-bg {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
@@ -53,45 +53,7 @@
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
 }
 
-/* Light mode overrides if toggled */
-html:not(.dark) body {
-  background-color: #F8FAFC;
-  color: #0F172A;
-}
-
-html:not(.dark) .systems-grid-bg {
-  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
-}
-
-html:not(.dark) .tactile-card {
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-}
-
-html:not(.dark) .tactile-card:hover {
-  border-color: #0284C7;
-  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.12);
-}
-
-/* Precision status pill */
-.status-indicator-ping {
-  animation: pulse-dot 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.4;
-    transform: scale(0.9);
-  }
-}
-
-/* Custom Scrollbar - Precision Minimal */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -108,14 +70,6 @@ html:not(.dark) .tactile-card:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #333948;
-}
-
-html:not(.dark) ::-webkit-scrollbar-track {
-  background: #F1F5F9;
-}
-
-html:not(.dark) ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
 }
 
 /* Print Optimization for Resume */
