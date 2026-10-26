@@ -15,7 +15,8 @@ export interface ExperienceItem {
   company: string;
   location: string;
   period: string;
-  type: 'R&D' | 'Engineering' | 'Analysis' | 'Operations';
+  type: 'R&D' | 'Engineering' | 'Analysis' | 'Operations' | 'Full-Time';
+  statusBadge?: string;
   highlights: string[];
   skills: string[];
   awards?: string[];
@@ -38,15 +39,39 @@ export interface ProjectItem {
   id: string;
   title: string;
   subtitle: string;
-  category: 'HPC & Simulation' | 'Telemetry & Automation' | 'Graphics & Math' | 'Systems';
+  category: string;
   period: string;
   summary: string;
   architectureDetails: string[];
   keyOutcomes: string[];
   technologies: string[];
   repoUrl?: string;
-  interactiveDemoType?: 'heat-equation' | 'terminal' | 'webgl-matrix';
+  interactiveDemoType?: 'heat-equation' | 'terminal' | 'webgl-matrix' | 'game-dev';
   featured: boolean;
+}
+
+export interface VentureItem {
+  id: string;
+  title: string;
+  domain: string;
+  url: string;
+  role: string;
+  period: string;
+  status: string;
+  summary: string;
+  stack: { category: string; details: string }[];
+  image: string;
+  imageCaption: string;
+}
+
+export interface BentoItem {
+  id: string;
+  tag: string;
+  title: string;
+  caption: string;
+  description: string;
+  image: string;
+  aspectRatio?: string;
 }
 
 export interface SkillCategory {
@@ -67,4 +92,3 @@ export interface AwardItem {
   description: string;
   badgeType: 'national-lab' | 'academic' | 'leadership';
 }
-
