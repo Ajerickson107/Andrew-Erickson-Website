@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Terminal, ShieldCheck, Code2, LineChart, Binary } from 'lucide-react';
+import { Cpu, Terminal, Code2, LineChart, Binary, Wrench } from 'lucide-react';
 import { skillCategories } from '../data/resumeData';
 
 export const Skills: React.FC = () => {
@@ -16,7 +16,7 @@ export const Skills: React.FC = () => {
     if (category.toLowerCase().includes('mathematics')) {
       return <Binary className="w-4 h-4 text-amber-400" />;
     }
-    return <Terminal className="w-4 h-4 text-slate-400" />;
+    return <Wrench className="w-4 h-4 text-slate-400" />;
   };
 
   return (
@@ -26,16 +26,15 @@ export const Skills: React.FC = () => {
         {/* Section Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-white/[0.08]">
           <div>
-            <div className="font-mono text-xs text-sky-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-xs bg-sky-400"></span>
-              <span>// Technical Tooling & Core Competencies</span>
+            <div className="font-mono text-xs text-sky-400 uppercase tracking-wider mb-1.5">
+              Technical Proficiencies
             </div>
             <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-slate-100">
-              Systems & Applied Math Matrix
+              Skills & Tooling Matrix
             </h2>
           </div>
-          <p className="text-xs font-mono text-slate-400 mt-2 md:mt-0">
-            Cluster Administration, Numerical Discretization & Telemetry Pipelines
+          <p className="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">
+            HPC systems, programming languages, observability tools, and applied mathematics
           </p>
         </div>
 

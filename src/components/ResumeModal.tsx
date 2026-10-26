@@ -26,39 +26,67 @@ PROFESSIONAL EXPERIENCE
 Sandia National Laboratories, Albuquerque, NM
 R&D S&E Computer Science — HPC Systems (Full-Time | Promoted from Graduate Intern) (Oct. 2026 – Present)
 - HPC Monitoring & Telemetry: Engineering multi-cluster telemetry pipelines continuously ingesting compute metrics, scheduler logs, and fabric counters into PostgreSQL.
-- Cluster Sanity Automation (admincheck): Maintain automated daily Python health daemon verifying administrative nodes, Lustre/NFS filesystems, and InfiniBand/Omni-Path network fabrics with responsive HTML reporting.
-- Storage Optimization: Conducted metadata queries in Starfish and Redash over petabytes of parallel storage to detect cold datasets and improve allocation efficiency.
+- Cluster Sanity Automation (admincheck): Developed and maintain automated daily Python health daemon verifying administrative nodes, Lustre/NFS filesystems, and InfiniBand/Omni-Path network fabrics with responsive HTML reporting.
+- Operational Triage: Collaborating with system administrators on cluster triage, isolating node hardware anomalies, and investigating partition queue bottlenecks.
+- Storage Optimization: Profiling petabytes of parallel storage using Starfish and Redash to isolate cold data and improve allocation efficiency.
 
 Sandia National Laboratories, Albuquerque, NM
 R&D Graduate & Undergraduate Intern – HPC Systems (May 2026 – Oct. 2026)
-- Engineered end-to-end multi-cluster telemetry pipeline via Python and Bash automating collection, parsing, and ETL of SLURM scheduler logs.
+- Engineered end-to-end multi-cluster telemetry pipeline via Python and Bash automating collection, parsing, and ETL of SLURM scheduler logs into PostgreSQL.
 - Constructed Grafana operational dashboards for system administrators, enabling drill-down analysis from cluster-wide heatmaps to per-core utilization.
 
 Sandia National Laboratories, Albuquerque, NM
 Business Undergraduate Intern – Safeguards & Security (Nov. 2024 – May 2026)
-- Digital transformation of self-assessment reporting system using Power Automate, Excel computation logic, and automated SharePoint deliverables.
+- Spearheaded digital transformation of self-assessment reporting system using Power Automate, Excel computation logic, and automated SharePoint deliverables.
 - Developed dynamic Power BI dashboards for executive security oversight.
 - Honored with Intern Thunderbird Award (July 2026), 2x Sandia SPOT Awards, and 2x Sandia ERA Nominations.
+
+NM Taxation and Revenue Department, Santa Fe, NM
+Undergraduate Intern (May 2024 – Aug. 2024)
+- Researched and structured datasets to support the modernization of state tax statutes; prepared data-driven briefings for the Cabinet Secretary.
+- Conducted systematic inventory, distribution, and reconciliation of state assets.
+
+Chill Zone LLC, Rio Rancho, NM
+Marketing Coordinator & Sales Lead (Mar. 2021 – Nov. 2024)
+- Maintained the point-of-sale (POS) and inventory database for a retail business generating $150k–$200k annually, ensuring transactional accuracy.
+- Managed onboarding and operational training for 3+ new hires annually and provided daily floor guidance to a team of 5–10 staff members.
+
+University of Denver, Denver, CO
+Honors Program Recruitment Assistant (Sept. 2022 – June 2023)
+- Managed prospective student demographic datasets from SIS to support student recruitment campaigns for the University Honors Program.
 
 APPLIED SYSTEMS & VENTURES
 Emily Erickson Massage LLC, Albuquerque, NM (emilyericksonmassage.com)
 General Business Administrator & Systems Lead (2024 – Present)
-- Architected and manage technical & operational infrastructure: Cloudflare DNS, SSL/TLS, embedded scheduling engine, local NM RLD regulatory compliance, automated revenue reconciliation, and NM Gross Receipts Tax (GRT) pipelines.
+- Manage business and technical operations: website build & maintenance, online booking system, City of Albuquerque business licensing and NM RLD state compliance, bookkeeping, and quarterly state GRT and federal tax filings.
 
 EDUCATION
 University of New Mexico, Albuquerque, NM
-M.S. in Computer Science (Plan I Thesis Option) (In Progress, Part-Time: 1–2 classes/term, Expected 2028)
+M.S. in Computer Science (Plan I Thesis Option) (Aug. 2026 – Expected May 2028, Part-Time)
 - Focus: Parallel architectures, distributed systems, algorithms, scientific computing simulation, computer graphics.
 - Coursework: CS 561 (Algorithms), CS 512 (Computer Graphics), CS 533 (Experimental Methods in CS), CS 341L (Computer Architecture).
 
 University of New Mexico, Albuquerque, NM
-B.S. in Mathematics, Minor in Computer Science (Aug. 2023 – May 2026)
+B.S. in Mathematics & Sociology (Dual Major), Minor in Computer Science (Aug. 2023 – May 2026)
 - Conferred Summa Cum Laude with a 3.96 Cumulative GPA across 141 collegiate credit hours.
 - UNM Presidential Scholarship Recipient (top 75 incoming New Mexico freshmen).
 - Coursework: Scientific Computing (MATH 471), Real Analysis (MATH 401), Numerical Computing (MATH 375), Linear Algebra (MATH 321), PDEs (MATH 312), Vector Analysis (MATH 311), DSA I & II (CS 361L/362).
 
+University of Denver, Denver, CO
+Undergraduate Coursework in Mathematics & Socio-Legal Studies (Sept. 2022 – June 2023)
+- Elected Freshman Senator in Undergraduate Student Government; collegiate honors curriculum.
+
+HONORS & RECOGNITION
+- Intern Thunderbird Award (Sandia National Laboratories, July 2026)
+- Sandia SPOT Award (2x Recipient)
+- Sandia Employee Recognition Award (ERA) Nominee (2x Nominee)
+- Summa Cum Laude Honors (UNM, 3.96 GPA)
+- UNM Presidential Scholarship (2023 – 2026)
+- Student Government Senator (University of Denver, 2022 – 2023)
+- Community Impact Award (The ASK Academy, May 2022)
+
 TECHNICAL SKILLS
-Languages: Python (NumPy, SciPy, mpi4py), Bash, C/C++, SQL (PostgreSQL), MATLAB, C# / Unity, GLSL/HLSL, Java, LaTeX
+Languages: Python (NumPy, SciPy, mpi4py), Bash, C/C++, SQL (PostgreSQL), MATLAB, C# (Unity), GLSL/HLSL, Java, LaTeX
 HPC & Systems: MPI, OpenMP, SLURM, TOSS RHEL / Linux, InfiniBand, Omni-Path, Lustre, NFS
 Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Automate, Git/GitHub/LoboGit, OpenXR VR`;
 
@@ -167,7 +195,7 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                   <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
                     <li>HPC Telemetry Ingestion: Engineering multi-cluster telemetry pipelines polling compute metrics and SLURM logs into PostgreSQL.</li>
                     <li>Cluster Sanity Automation (admincheck): Developed and maintain automated daily Python sanity utility validating administrative nodes, Lustre/NFS filesystems, and InfiniBand/Omni-Path network fabrics with responsive HTML reporting.</li>
-                    <li>Operational Triage: Assisted cluster administrators with daily diagnostic sweeps, isolating node hardware anomalies and partition queue bottlenecks.</li>
+                    <li>Operational Triage: Collaborating with system administrators on cluster triage, isolating node hardware anomalies, and investigating partition queue bottlenecks.</li>
                     <li>Storage Optimization: Profiling petabytes of parallel storage using Starfish and Redash to isolate cold data and improve allocation efficiency.</li>
                   </ul>
                 </div>
@@ -179,7 +207,7 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                   </div>
                   <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
                     <li>Engineered multi-cluster telemetry pipeline via Python and Bash automating ETL into PostgreSQL and Grafana.</li>
-                    <li>Configured dedicated server environments and automated diagnostic sweeps for Sandia TITANS cohort.</li>
+                    <li>Hardened multi-cluster telemetry pipelines, scheduler log ingestion, and admincheck daily cluster sanity sweeps.</li>
                   </ul>
                 </div>
 
@@ -192,6 +220,38 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                     <li>Spearheaded digital transformation of self-assessment reporting system using Power Automate, Excel computation logic, and automated SharePoint deliverables.</li>
                     <li>Developed dynamic Power BI dashboards for executive security oversight.</li>
                     <li>Honored with Intern Thunderbird Award (July 2026), 2x Sandia SPOT Awards, and 2x Sandia ERA Nominations.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex justify-between font-semibold text-slate-100 print:text-black">
+                    <span>NM Taxation and Revenue Department — Undergraduate Intern</span>
+                    <span className="font-mono text-[11px]">May 2024 – Aug. 2024</span>
+                  </div>
+                  <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
+                    <li>Researched and structured datasets to support the modernization of state tax statutes; prepared data-driven briefings for the Cabinet Secretary.</li>
+                    <li>Conducted systematic inventory, distribution, and reconciliation of state assets.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex justify-between font-semibold text-slate-100 print:text-black">
+                    <span>Chill Zone LLC — Marketing Coordinator & Sales Lead</span>
+                    <span className="font-mono text-[11px]">Mar. 2021 – Nov. 2024</span>
+                  </div>
+                  <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
+                    <li>Maintained the point-of-sale (POS) and inventory database for a retail business generating $150k–$200k annually, ensuring inventory and transactional accuracy.</li>
+                    <li>Managed onboarding and training for new hires and provided floor leadership to a 5–10 person team.</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex justify-between font-semibold text-slate-100 print:text-black">
+                    <span>University of Denver — Honors Program Recruitment Assistant</span>
+                    <span className="font-mono text-[11px]">Sept. 2022 – June 2023</span>
+                  </div>
+                  <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
+                    <li>Managed prospective student demographic datasets from SIS to support student recruitment campaigns for the University Honors Program.</li>
                   </ul>
                 </div>
               </div>
@@ -211,8 +271,7 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                   emilyericksonmassage.com | Albuquerque, NM
                 </div>
                 <ul className="list-disc list-inside text-slate-300 print:text-neutral-700 space-y-0.5 mt-1">
-                  <li>Designed and manage end-to-end operational stack: Cloudflare DNS architecture, custom domain routing, automated SSL/TLS provisioning, and booking embed integration.</li>
-                  <li>Administer regulatory compliance for State of NM RLD massage establishment licensing, municipal permits, and automated NM Gross Receipts Tax (GRT) and federal tax pipelines.</li>
+                  <li>Manage business and technical operations: website build & maintenance, online booking system, City of Albuquerque business licensing and NM RLD state compliance, bookkeeping, and quarterly state GRT and federal tax filings.</li>
                 </ul>
               </div>
             </div>
@@ -245,7 +304,7 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                     <span className="font-mono text-[11px]">Albuquerque, NM</span>
                   </div>
                   <div className="flex justify-between text-slate-300 print:text-neutral-800 italic">
-                    <span>B.S. Mathematics (Dual Major Sociology), Minor in Computer Science</span>
+                    <span>B.S. Mathematics & Sociology (Dual Major), Minor in Computer Science</span>
                     <span className="font-mono text-[11px] not-italic">Aug. 2023 – May 2026</span>
                   </div>
                   <ul className="list-disc list-inside text-slate-400 print:text-neutral-700 space-y-0.5 mt-1">
@@ -253,7 +312,37 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
                     <li>Coursework: Scientific Computing (MATH 471), Real Analysis (MATH 401), Numerical Computing (MATH 375), Linear Algebra, PDEs, Vector Analysis, Complex Variables, DSA I & II.</li>
                   </ul>
                 </div>
+
+                <div>
+                  <div className="flex justify-between font-semibold text-slate-100 print:text-black">
+                    <span>University of Denver</span>
+                    <span className="font-mono text-[11px]">Denver, CO</span>
+                  </div>
+                  <div className="flex justify-between text-slate-300 print:text-neutral-800 italic">
+                    <span>Undergraduate Coursework in Mathematics & Socio-Legal Studies</span>
+                    <span className="font-mono text-[11px] not-italic">Sept. 2022 – June 2023</span>
+                  </div>
+                  <ul className="list-disc list-inside text-slate-400 print:text-neutral-700 space-y-0.5 mt-1">
+                    <li>Elected Freshman Senator in Undergraduate Student Government; collegiate honors curriculum.</li>
+                  </ul>
+                </div>
               </div>
+            </div>
+
+            {/* Honors & Awards */}
+            <div>
+              <h2 className="text-xs font-bold uppercase tracking-wider text-sky-400 print:text-black border-b border-white/[0.08] print:border-black/30 pb-1 mb-2 font-mono">
+                Honors & Recognition
+              </h2>
+              <ul className="list-disc list-inside text-slate-400 print:text-neutral-700 space-y-1">
+                <li><strong className="text-slate-100 print:text-black">Intern Thunderbird Award:</strong> Sandia National Laboratories laboratory-wide honor for digital automation (July 2026).</li>
+                <li><strong className="text-slate-100 print:text-black">Sandia SPOT Award (2x Recipient):</strong> Cash performance award presented by Center Director.</li>
+                <li><strong className="text-slate-100 print:text-black">Sandia ERA Nominee (2x Nominee):</strong> Nominated for systems integration and cost savings.</li>
+                <li><strong className="text-slate-100 print:text-black">Summa Cum Laude Honors:</strong> Conferred with 3.96 GPA across 141 credit hours.</li>
+                <li><strong className="text-slate-100 print:text-black">UNM Presidential Scholarship:</strong> Merit award granted to top 75 incoming freshmen in New Mexico.</li>
+                <li><strong className="text-slate-100 print:text-black">Student Government Senator:</strong> University of Denver (2022 – 2023).</li>
+                <li><strong className="text-slate-100 print:text-black">Community Impact Award:</strong> The ASK Academy (May 2022).</li>
+              </ul>
             </div>
 
             {/* Technical Skills */}
@@ -264,23 +353,9 @@ Observability & Tools: PostgreSQL, Grafana, Starfish, Redash, Power BI, Power Au
               <div className="space-y-1 text-slate-300 print:text-neutral-800">
                 <div><strong className="text-slate-100 print:text-black">Languages:</strong> Python (NumPy, SciPy, mpi4py), Bash, C/C++, SQL (PostgreSQL), MATLAB, C# (Unity), GLSL/HLSL, Java, LaTeX</div>
                 <div><strong className="text-slate-100 print:text-black">High Performance Computing:</strong> MPI, OpenMP, SLURM Job Scheduling, TOSS RHEL / Linux, InfiniBand, Omni-Path, Lustre, NFS</div>
-                <div><strong className="text-slate-100 print:text-black">Data & Observability:</strong> PostgreSQL Timeseries, Grafana, Starfish, Redash, Microsoft Power Platform (Power BI, Power Automate), SharePoint</div>
-                <div><strong className="text-slate-100 print:text-black">Interactive & Graphics:</strong> Unity, OpenXR VR, WebGL, Shader Programming, 3D Affine Transformations</div>
+                <div><strong className="text-slate-100 print:text-black">Data & Observability:</strong> PostgreSQL, Grafana, Starfish, Redash, Microsoft Power Platform (Power BI, Power Automate), SharePoint</div>
+                <div><strong className="text-slate-100 print:text-black">Interactive & Graphics:</strong> Unity, OpenXR VR, WebGL, Shader Programming</div>
               </div>
-            </div>
-
-            {/* Awards & Honors */}
-            <div>
-              <h2 className="text-xs font-bold uppercase tracking-wider text-sky-400 print:text-black border-b border-white/[0.08] print:border-black/30 pb-1 mb-2 font-mono">
-                Selected Honors & Distinctions
-              </h2>
-              <ul className="list-disc list-inside text-slate-400 print:text-neutral-700 space-y-1">
-                <li><strong className="text-slate-100 print:text-black">Intern Thunderbird Award:</strong> Sandia National Laboratories laboratory-wide honor for digital transformation (July 2026).</li>
-                <li><strong className="text-slate-100 print:text-black">Sandia SPOT Award (2x Recipient):</strong> Cash bonus awarded by Center Director for systems automation.</li>
-                <li><strong className="text-slate-100 print:text-black">Sandia ERA Nominee (2x Nominee):</strong> Formally nominated for advanced systems integration.</li>
-                <li><strong className="text-slate-100 print:text-black">Summa Cum Laude Honors:</strong> Graduated with 3.96 GPA across 141 credit hours.</li>
-                <li><strong className="text-slate-100 print:text-black">UNM Presidential Scholarship:</strong> Merit award granted to top 75 incoming freshmen in New Mexico.</li>
-              </ul>
             </div>
 
           </div>

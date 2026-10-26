@@ -87,8 +87,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, isDark, onToggleTh
                 <span className="font-medium text-sm sm:text-base text-slate-900 dark:text-[#F3F4F6] tracking-tight group-hover:text-sky-400 transition-colors">
                   {personalInfo.name}
                 </span>
-                <span className="text-[11px] font-mono text-slate-500 dark:text-[#9CA3AF] tracking-tight hidden sm:inline-block">
-                  HPC Systems // R&D S&E
+                <span className="text-[11px] text-slate-400 tracking-tight hidden sm:inline-block">
+                  HPC Systems • Sandia R&D
                 </span>
               </div>
             </a>

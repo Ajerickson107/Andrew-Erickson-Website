@@ -10,7 +10,7 @@ export const personalInfo = {
   email: "ajerickson107@gmail.com",
   eduEmail: "aerickson107@unm.edu",
   photoUrl: "/images/PXL_20251230_001347792.jpg",
-  photoCaption: "Andrew & Emily — Las Vegas, 2025",
+  photoCaption: "Emily and me in Las Vegas",
   clearance: "Active DOE Q Clearance",
   clearanceDetails: "Department of Energy Q-Level Security Clearance (Active)",
   links: {
@@ -20,13 +20,9 @@ export const personalInfo = {
     gitlabHeatEq: "https://lobogit.unm.edu/aerickson107/2025_fall_math471_erickson",
   },
   heroHeading: "Computer scientist working on high-performance computing systems, telemetry pipelines, and applied mathematics.",
-  heroBio: "Recently converted from a graduate intern to a full-time R&D S&E Computer Science role at Sandia National Laboratories within HPC Systems, while completing my Master of Science in Computer Science at the University of New Mexico (taking 1–2 classes per term after an undergraduate degree in Mathematics).",
-  colophon: "Built with precision. Running on clean HTML/CSS/JS, hosted via GitHub Pages. Powered by Linux, mechanical keyboards, and coffee.",
-  telemetry: {
-    coordinates: "35.0844° N, 106.6504° W",
-    timezone: "America/Denver (MST / MDT)",
-    systemState: "All Systems Nominal",
-  }
+  heroBio: "I recently converted from a graduate intern to a full-time R&D S&E Computer Science role at Sandia National Laboratories within HPC Systems, while completing my Master of Science in Computer Science at the University of New Mexico after earning my undergraduate degree in Mathematics.",
+  colophon: "Built with precision. Running on clean HTML/CSS/JS, hosted via GitHub Pages. Powered by Linux, mechanical keyboards, and energy drinks.",
+  locationDisplay: "Albuquerque, New Mexico"
 };
 
 export const experiences: ExperienceItem[] = [
@@ -40,25 +36,40 @@ export const experiences: ExperienceItem[] = [
     statusBadge: "Full-Time | Promoted from Graduate Intern",
     highlights: [
       "HPC System Monitoring & Telemetry: Engineering multi-cluster telemetry pipelines that continuously poll compute node metrics, scheduler queues, and fabric health into a centralized PostgreSQL timeseries data store.",
-      "Cluster Sanity Automation (admincheck): Developed and maintain an automated daily Python health daemon verifying administrative nodes, Lustre/NFS parallel storage mounts, and InfiniBand/Omni-Path network fabrics with responsive HTML reporting.",
-      "Performance Observability & Triage: Partnering with senior system administrators to diagnose anomalous compute node behavior, detect transient hardware degradations, and streamline scheduler throughput.",
-      "Storage Resource Optimization: Developed analytic queries and dashboards in Starfish and Redash across petabytes of high-performance storage to detect cold data and enforce quota compliance."
+      "Cluster Sanity Automation (admincheck): Developed and maintain an automated daily Python health utility verifying administrative nodes, Lustre/NFS parallel storage mounts, and InfiniBand/Omni-Path network fabrics with responsive HTML reporting.",
+      "Performance Observability & Triage: Working closely with system administrators to diagnose node hardware anomalies, investigate queue bottlenecks, and streamline scheduler throughput.",
+      "Storage Resource Optimization: Running analytic queries and dashboards in Starfish and Redash across petabytes of parallel storage to detect stagnant datasets and help teams stay within storage quotas."
     ],
     skills: ["Python", "Bash", "PostgreSQL", "Grafana", "SLURM", "TOSS RHEL", "InfiniBand", "Omni-Path", "Lustre", "Linux"],
     awards: ["Active DOE Q Clearance", "Promoted to Full-Time R&D S&E"]
   },
   {
-    id: "sandia-hpc-intern",
-    role: "R&D Graduate & Undergraduate Intern – HPC Systems",
+    id: "sandia-hpc-grad",
+    role: "R&D Graduate Intern – HPC Systems",
     company: "Sandia National Laboratories",
     location: "Albuquerque, NM",
-    period: "May 2026 – Oct. 2026",
+    period: "Aug. 2026 – Oct. 2026",
     type: "R&D",
-    statusBadge: "Graduate & Undergraduate R&D Intern",
+    statusBadge: "Graduate Intern",
     highlights: [
-      "Engineered automated ETL pipelines utilizing Python and Bash to capture SLURM scheduler logs and node utilization metrics without impacting production compute workloads.",
-      "Constructed Grafana operational dashboards for system administrators, enabling drill-down analysis from cluster-wide heatmaps to per-core memory/CPU utilization.",
-      "Configured dedicated server environments and automated cluster diagnostic routines for the Sandia TITANS intern cohort."
+      "Hardened multi-cluster telemetry pipelines, enhancing automated scheduler log ingestion and error handling into PostgreSQL.",
+      "Maintained and enhanced admincheck cluster sanity monitors across production nodes.",
+      "Assisted cluster administrators with daily diagnostic sweeps, isolating node hardware anomalies across InfiniBand and Omni-Path fabrics."
+    ],
+    skills: ["Python", "Bash", "PostgreSQL", "SLURM", "InfiniBand", "Lustre", "Linux", "TOSS RHEL"]
+  },
+  {
+    id: "sandia-hpc-undergrad",
+    role: "R&D Undergraduate Intern – HPC Systems",
+    company: "Sandia National Laboratories",
+    location: "Albuquerque, NM",
+    period: "May 2026 – Aug. 2026",
+    type: "R&D",
+    statusBadge: "Undergraduate Intern",
+    highlights: [
+      "Engineered an end-to-end multi-cluster telemetry pipeline using Python and Bash to automate the collection, parsing, and ETL of node utilization and SLURM scheduler data into PostgreSQL.",
+      "Constructed Grafana operational dashboards for system administrators, enabling drill-down analysis from cluster-wide heatmaps to per-core memory and CPU utilization.",
+      "Built Starfish and Redash dashboards to profile petabyte-scale storage resources and identify cold data."
     ],
     skills: ["Python", "Bash", "PostgreSQL", "Grafana", "SLURM", "Starfish", "Redash", "Linux", "TOSS RHEL"]
   },
@@ -71,11 +82,12 @@ export const experiences: ExperienceItem[] = [
     type: "Engineering",
     statusBadge: "Thunderbird Award & SPOT Recipient",
     highlights: [
-      "Digital Transformation: Spearheaded the complete automation of the Safeguards & Security self-assessment reporting ecosystem, replacing manual spreadsheets with an automated backend and dynamic Power BI dashboards.",
-      "Backend Architecture: Designed Microsoft Power Automate pipelines ingesting responses from structured MS Forms, executing verification logic in Excel, and pushing formal deliverables systematically to SharePoint.",
-      "Laboratory Recognition: Honored with the prestigious Sandia Intern Thunderbird Award (July 2026), two Sandia SPOT Awards, and two Sandia ERA Nominations for cost savings and operational modernization."
+      "Spearheaded the digital transformation of the Safeguards & Security self-assessment reporting system, replacing manual spreadsheets with an automated pipeline.",
+      "Engineered backend pipelines using Microsoft Power Automate to ingest data from MS Forms, process verification logic in Excel, and generate formal PDF deliverables systematically published to SharePoint.",
+      "Developed dynamic Power BI dashboards to provide executive leadership with real-time oversight of security assessment milestones.",
+      "Honored with the Intern Thunderbird Award (July 2026), two Sandia SPOT Awards, and two Sandia ERA Nominations for cost savings and operational modernization."
     ],
-    skills: ["Microsoft Power Platform", "Power BI", "Power Automate", "SharePoint", "Process Automation", "Data Analysis"],
+    skills: ["Microsoft Power Platform", "Power BI", "Power Automate", "SharePoint", "Data Automation", "Process Modernization"],
     awards: ["Intern Thunderbird Award (July 2026)", "Sandia SPOT Award (2x)", "Sandia ERA Nominee (2x)"]
   },
   {
@@ -86,10 +98,36 @@ export const experiences: ExperienceItem[] = [
     period: "May 2024 – Aug. 2024",
     type: "Analysis",
     highlights: [
-      "Researched and structured datasets to support modernization of state tax statutes; prepared data-driven municipal briefings for the Cabinet Secretary.",
+      "Researched and structured datasets to support the modernization of state tax statutes; prepared data-driven municipal briefings for the Cabinet Secretary.",
       "Conducted systematic inventory, distribution, and reconciliation of state assets."
     ],
     skills: ["Data Analysis", "SQL", "Statistical Modeling", "Executive Briefings"]
+  },
+  {
+    id: "chill-zone",
+    role: "Marketing Coordinator & Sales Lead",
+    company: "Chill Zone LLC",
+    location: "Rio Rancho, NM",
+    period: "Mar. 2021 – Nov. 2024",
+    type: "Operations",
+    highlights: [
+      "Maintained the point-of-sale (POS) and inventory database for a retail business generating $150k–$200k annually, ensuring inventory and transactional accuracy.",
+      "Managed onboarding and operational training for 3+ new hires annually and provided daily floor guidance to a team of 5–10 staff members."
+    ],
+    skills: ["Database Operations", "Inventory Systems", "POS Administration", "Team Leadership"]
+  },
+  {
+    id: "univ-denver-recruitment",
+    role: "Honors Program Recruitment Assistant",
+    company: "University of Denver",
+    location: "Denver, CO",
+    period: "Sept. 2022 – June 2023",
+    type: "Operations",
+    highlights: [
+      "Managed prospective student demographic datasets from the Student Information System (SIS) to support student recruitment campaigns for the University Honors Program.",
+      "Collaborated with academic directors and faculty to design informational presentations and coordinate prospective student campus visits."
+    ],
+    skills: ["Student Information System (SIS)", "Dataset Management", "Academic Communications"]
   }
 ];
 
@@ -99,17 +137,17 @@ export const educationList: EducationItem[] = [
     degree: "Master of Science in Computer Science",
     institution: "University of New Mexico",
     location: "Albuquerque, NM",
-    period: "In Progress (Part-Time: 1–2 classes/term, Expected 2028)",
-    details: "Balancing full-time R&D S&E systems engineering at Sandia National Laboratories with rigorous graduate coursework in parallel architectures, distributed systems, algorithms, and scientific computing.",
+    period: "Aug. 2026 – Expected May 2028",
+    details: "Pursuing my master's degree part-time while working full-time in HPC Systems at Sandia National Laboratories.",
     highlights: [
-      "Research & Coursework Focus: Parallel architectures, distributed systems, algorithms, scientific computing simulation, and computer graphics.",
-      "Current & Core Coursework: CS 561 (Advanced Algorithms), CS 512 (Intro to Computer Graphics), CS 533 (Experimental Methods in CS), CS 341L (Intro to Computer Architecture & Organization).",
-      "Plan I Thesis Option: Exploring large-scale system modeling and high-performance cluster observability."
+      "Focus areas: Parallel computer architectures, distributed systems, algorithms, scientific computing simulation, and computer graphics.",
+      "Current coursework: Advanced Algorithms (CS 561), Intro to Computer Graphics (CS 512), Experimental Methods in CS (CS 533), and Intro to Computer Architecture & Organization (CS 341L).",
+      "Plan I Thesis Option: Researching large-scale simulation and cluster performance observability."
     ]
   },
   {
     id: "unm-bs-math",
-    degree: "Bachelor of Science in Mathematics, Minor in Computer Science",
+    degree: "Bachelor of Science in Mathematics & Sociology (Dual Major), Minor in Computer Science",
     institution: "University of New Mexico",
     location: "Albuquerque, NM",
     period: "Aug. 2023 – May 2026 (Graduated May 16, 2026)",
@@ -118,22 +156,81 @@ export const educationList: EducationItem[] = [
     details: "Completed 141 credit hours with highest university honors, uniting partial differential equations, numerical computing, linear algebra, vector analysis, real analysis, and foundational algorithms.",
     highlights: [
       "Graduated Summa Cum Laude with a 3.96 Cumulative GPA across 141 completed collegiate credit hours.",
-      "UNM Presidential Scholarship Recipient (merit award granted to top 75 incoming freshmen in New Mexico).",
-      "Consistent Dean's List recognition across every semester at UNM.",
-      "Dual Major in Mathematics and Sociology, bridging analytical mathematical modeling with empirical data analysis."
+      "UNM Presidential Scholarship Recipient (merit award granted to the top 75 incoming freshmen in New Mexico).",
+      "Dean's List recognition across every semester enrolled at UNM.",
+      "Coursework: Scientific Computing (MATH 471), Numerical Computing (MATH 375), Real Analysis (MATH 401), Linear Algebra (MATH 321), PDEs (MATH 312), Vector Analysis (MATH 311), Complex Variables (MATH 313), Data Structures & Algorithms I & II (CS 361L / CS 362)."
     ]
   },
   {
     id: "univ-denver",
-    degree: "Undergraduate Studies in Mathematics & Socio-Legal Studies",
+    degree: "Undergraduate Coursework in Mathematics & Socio-Legal Studies",
     institution: "University of Denver",
     location: "Denver, CO",
     period: "Sept. 2022 – June 2023",
-    details: "Completed collegiate calculus sequences and honors curriculum prior to transferring to UNM for dual Mathematics & Computer Science majors.",
+    details: "Completed collegiate calculus sequences and honors curriculum prior to transferring to UNM for dual Mathematics & Computer Science studies.",
     highlights: [
       "Honors Program Recruitment Assistant: Managed student demographic datasets from SIS for admissions outreach.",
-      "Undergraduate Student Government: Elected Freshman Senator representing student directives in university governance."
+      "Undergraduate Student Government: Elected Freshman Senator representing student directives in campus governance."
     ]
+  }
+];
+
+export const awards: AwardItem[] = [
+  {
+    id: "thunderbird",
+    title: "Intern Thunderbird Award",
+    organization: "Sandia National Laboratories",
+    date: "July 2026",
+    description: "Sandia's premier laboratory-wide intern award, received for demonstrating laboratory core values and driving mission impact through the digital automation of the Safeguards & Security reporting system.",
+    badgeType: "national-lab"
+  },
+  {
+    id: "spot-award",
+    title: "Sandia SPOT Award (2x Recipient)",
+    organization: "Sandia National Laboratories",
+    date: "Awarded 2x",
+    description: "Special cash performance bonus awarded by the Center Director & Leadership for architecting and deploying an automated self-assessments reporting and business intelligence system.",
+    badgeType: "national-lab"
+  },
+  {
+    id: "era-nomination",
+    title: "Sandia Employee Recognition Award (ERA) Nominee (2x)",
+    organization: "Sandia National Laboratories",
+    date: "Nominated 2x",
+    description: "Formally nominated for systems integration, cost savings, and structural improvements across laboratory operations.",
+    badgeType: "national-lab"
+  },
+  {
+    id: "summa-cum-laude",
+    title: "Summa Cum Laude Honors (3.96 / 4.0 GPA)",
+    organization: "University of New Mexico",
+    date: "May 2026",
+    description: "Conferred with highest university honors upon graduation with dual major in Mathematics and Sociology, minor in Computer Science.",
+    badgeType: "academic"
+  },
+  {
+    id: "presidential-scholarship",
+    title: "UNM Presidential Scholarship",
+    organization: "University of New Mexico",
+    date: "2023 – 2026",
+    description: "Premier academic merit award granted to the top 75 incoming freshmen across New Mexico.",
+    badgeType: "academic"
+  },
+  {
+    id: "senator",
+    title: "Student Government Senator",
+    organization: "University of Denver",
+    date: "2022 – 2023",
+    description: "Elected Freshman Senator in Undergraduate Student Government; managed student directives and voted on university budgets.",
+    badgeType: "leadership"
+  },
+  {
+    id: "community-impact",
+    title: "Community Impact Award",
+    organization: "The ASK Academy",
+    date: "May 2022",
+    description: "Awarded for outstanding community involvement, leadership as National Honor Society President, and Model UN leadership.",
+    badgeType: "leadership"
   }
 ];
 
@@ -144,26 +241,26 @@ export const ventureData: VentureItem = {
   url: "https://emilyericksonmassage.com",
   role: "General Business Administrator & Systems Lead",
   period: "2024 – Present",
-  status: "Active Production",
+  status: "Active Practice",
   image: "/images/IMG_4587.jpg",
-  imageCaption: "Studio treatment room with custom lighting installation & compliance certificates — Albuquerque, NM",
-  summary: "Architected, launched, and continuously administer the end-to-end technical infrastructure, compliance frameworks, and operational accounting pipelines for a premier private massage therapy practice in Albuquerque.",
+  imageCaption: "Emily's studio treatment room — Albuquerque, NM",
+  summary: "Outside of engineering, I help my partner Emily manage the business and technical operations for her private massage therapy practice in Albuquerque. I built and maintain her website and booking system, take care of local business registration and state licensing compliance, and handle the bookkeeping and taxes. It’s been a great hands-on way to support a local business I care about.",
   stack: [
     {
-      category: "Network & DNS Infrastructure",
-      details: "Custom domain routing, Cloudflare DNS, automatic SSL/TLS termination, edge caching, and mobile responsiveness."
+      category: "Website & Online Booking",
+      details: "Built and maintain emilyericksonmassage.com, with a clean online booking flow, automated appointment reminders, and mobile-friendly design."
     },
     {
-      category: "Booking & Client Intake",
-      details: "Seamless embedded booking system, automated calendar synchronization, SMS/email transactional notifications, and intake forms."
+      category: "Business Licensing & Compliance",
+      details: "Handled city business registration and State of New Mexico Regulation & Licensing Department (RLD) establishment licensing."
     },
     {
-      category: "Regulatory & Compliance",
-      details: "State of New Mexico Regulation & Licensing Department (RLD) massage establishment licensure, municipal city permits, and HIPAA-aware client record handling."
+      category: "Bookkeeping & Tax Administration",
+      details: "Manage daily expense tracking, income reconciliation, and quarterly state Gross Receipts Tax (GRT) and federal filings."
     },
     {
-      category: "Accounting & Tax Pipelines",
-      details: "Automated revenue tracking, digital expense reconciliation, quarterly New Mexico Gross Receipts Tax (GRT) filings, and federal self-employment tax administration."
+      category: "Studio Buildout & Equipment",
+      details: "Helped set up the treatment room, install custom lighting, and maintain equipment for client comfort."
     }
   ]
 };
@@ -173,13 +270,13 @@ export const projects: ProjectItem[] = [
     id: "hpc-telemetry-pipeline",
     title: "HPC Telemetry & Observability Pipeline",
     subtitle: "Automated Node Metrics ETL, Structured Storage & Sysadmin Dashboards",
-    category: "HPC & Telemetry",
+    category: "HPC & Systems",
     period: "May 2026 – Present",
-    summary: "Engineered an end-to-end telemetry pipeline across production HPC clusters at Sandia National Laboratories to aggregate node utilization, hardware metrics, and SLURM scheduler logs into a centralized PostgreSQL data store.",
+    summary: "Engineered an end-to-end telemetry pipeline across production HPC clusters at Sandia National Laboratories to aggregate node utilization, hardware metrics, and SLURM scheduler logs into a centralized PostgreSQL database.",
     architectureDetails: [
       "Automated extraction, transform, and load (ETL) routines via asynchronous Bash and Python jobs polling node-level metrics without degrading compute job throughput.",
       "Designed normalized PostgreSQL schemas with timeseries indexing for rapid querying over millions of hardware and job records.",
-      "Constructed Grafana operational dashboards for system administrators, enabling drill-down analysis from cluster-wide heatmaps to per-core memory/CPU utilization.",
+      "Constructed Grafana operational dashboards for system administrators, enabling drill-down analysis from cluster-wide heatmaps to per-core memory and CPU utilization.",
       "Integrated automated anomaly detection rules to isolate failing compute nodes and degraded InfiniBand links before jobs fail."
     ],
     keyOutcomes: [
@@ -195,7 +292,7 @@ export const projects: ProjectItem[] = [
     id: "mpi-heat-equation",
     title: "Parallel Scientific Computing: 2D Heat Equation Solver",
     subtitle: "Distributed Numerical Simulation with MPI & Domain Decomposition",
-    category: "HPC & Simulation",
+    category: "Simulation & Math",
     period: "Fall 2025",
     summary: "Developed a parallelized numerical solver for the unsteady 2D Heat Conduction Equation using Python and mpi4py, deploying the workload on the UNM Center for Advanced Research Computing (CARC) supercomputer.",
     architectureDetails: [
@@ -206,7 +303,7 @@ export const projects: ProjectItem[] = [
     ],
     keyOutcomes: [
       "Demonstrated parallel speedup across multi-core nodes on the UNM Wheeler/CARC supercomputing cluster.",
-      "Validated numerical stability against the CFL stability condition (dt <= dx^2 * dy^2 / (2 * alpha * (dx^2 + dy^2))).",
+      "Validated numerical stability against the CFL stability condition.",
       "Full repository code published on UNM LoboGit with reproducible SLURM job scripts."
     ],
     technologies: ["Python", "mpi4py (MPI)", "NumPy", "SLURM", "UNM CARC Supercomputer", "Bash", "Linux", "Git"],
@@ -218,7 +315,7 @@ export const projects: ProjectItem[] = [
     id: "game-dev-interactive",
     title: "Game Development & Interactive Systems",
     subtitle: "Physics Mechanics, Custom HLSL Shaders & OpenXR VR",
-    category: "Graphics & Interactive",
+    category: "Interactive & Graphics",
     period: "2024 – Present",
     summary: "Independent game development in Unity, C#, WebGL, and OpenXR VR — engineering responsive gameplay mechanics, custom graphics shaders, and spatial tracking systems.",
     architectureDetails: [
@@ -239,14 +336,14 @@ export const projects: ProjectItem[] = [
   {
     id: "admin-nodecheck",
     title: "HPC Administrative Node Health Automation (admincheck)",
-    subtitle: "Automated Cluster Verification & Resilient Telemetry Alerting",
-    category: "Systems & Infrastructure",
+    subtitle: "Automated Cluster Verification & Resilient Status Alerting",
+    category: "Systems & Automation",
     period: "2026",
     summary: "Engineered an automated daily Python sanity utility that validates administrative nodes, verifies key parallel storage filesystems (Lustre/NFS), and confirms operational health across InfiniBand (IB) and Omni-Path (OPA) network fabrics with responsive HTML reporting.",
     architectureDetails: [
       "Executes parallel diagnostic probes across login, management, and storage gateway nodes checking daemon states and port responsiveness.",
       "Parses InfiniBand (ibstat, ibnetdiscover) and Omni-Path fabric interfaces to ensure full link speed and zero error counter degradation.",
-      "Engineered an automated email delivery subsystem generating responsive, cross-platform HTML/CSS reports rendered cleanly in both desktop Outlook and mobile clients.",
+      "Engineered an automated email delivery subsystem generating responsive, cross-platform HTML/CSS reports rendered cleanly in desktop and mobile clients.",
       "Structured with configurable JSON thresholds, retry timeouts, and exit code telemetry."
     ],
     keyOutcomes: [
@@ -263,28 +360,28 @@ export const projects: ProjectItem[] = [
 export const bentoItems: BentoItem[] = [
   {
     id: "dogs-qa",
-    tag: "QA & Morale Team",
-    title: "Frank & Bean",
+    tag: "The Pugs",
+    title: "Clementine & Mosey",
     caption: "Resident Morale Officers & QA Team",
-    description: "Two black pugs maintaining rigorous supervision over workstation ergonomics, requiring mandatory afternoon outdoor resets, and testing folding camping chair durability.",
+    description: "Our two black pugs, Clementine and Mosey, keeping us company on the patio, claiming camping chairs, and making sure we take regular breaks away from our screens.",
     image: "/images/PXL_20260802_022017884.jpg",
     aspectRatio: "aspect-[4/3]"
   },
   {
     id: "bouldering",
-    tag: "Problem-Solving in Motion",
-    title: "Route Beta & Bouldering",
-    caption: "Route Problem-Solving & Dynamic Movement",
-    description: "Navigating indoor routes and New Mexico granite crags. Approaching climbing as kinetic debugging: analyzing body geometry, friction coefficients, and sequence optimization to solve complex beta.",
+    tag: "Rock Climbing",
+    title: "Bouldering & Movement",
+    caption: "Route problem-solving & movement",
+    description: "I spend much of my free time bouldering at local gyms and on New Mexico granite. It’s a great physical puzzle—figuring out balance, body positioning, and movement sequences to solve a tough route.",
     image: "/images/Screenshot 2026-10-25 174224.jpg",
-    aspectRatio: "aspect-[4/5]"
+    aspectRatio: "aspect-[4/3]"
   },
   {
     id: "field-hardware",
-    tag: "Hardware & Backcountry",
-    title: "Field Exploration & Linux Rigs",
-    caption: "Outdoor Exploration & Custom Hardware Rigs",
-    description: "Backcountry exploration with friends (perched atop a decommissioned military helicopter), building high-airflow custom PC builds, tuning dedicated Steam Machines, and configuring headless Linux servers.",
+    tag: "Outdoors & Hardware",
+    title: "Outdoors & Custom Builds",
+    caption: "Field exploration & custom hardware rigs",
+    description: "Hiking and exploring the New Mexico backcountry with friends (like this hike to an old decommissioned helicopter), building custom PCs, and tinkering with dedicated Linux setups and Steam Machines.",
     image: "/images/1.jpg",
     aspectRatio: "aspect-[4/3]"
   }
@@ -295,12 +392,12 @@ export const skillCategories: SkillCategory[] = [
     category: "HPC & Systems Engineering",
     iconName: "Cpu",
     skills: [
-      { name: "Linux & TOSS RHEL", level: "Advanced", description: "Daily CLI cluster administration, Tri-Lab Operating System Stack, WSL, SSH headless workflows" },
+      { name: "Linux & TOSS RHEL", level: "Advanced", description: "Daily CLI cluster administration, Tri-Lab Operating System Stack, WSL, SSH workflows" },
       { name: "SLURM Workload Manager", level: "Proficient", description: "Job batch scripts, allocation parameters, partition management, queue monitoring" },
       { name: "MPI (Message Passing Interface)", level: "Proficient", description: "Domain decomposition, non-blocking ghost cell halo exchange in 2D Heat Equation solver" },
       { name: "OpenMP & Multi-Threading", level: "Proficient", description: "Shared-memory parallelization, thread allocation, loop scheduling" },
       { name: "UNM CARC Supercomputer", level: "Proficient", description: "Deployed multi-node MPI jobs and scalability benchmarks on Center for Advanced Research Computing" },
-      { name: "InfiniBand & Omni-Path Fabrics", level: "Proficient", description: "Fabric link verification, ibstat telemetry checks, automated node health diagnostics" },
+      { name: "InfiniBand & Omni-Path Fabrics", level: "Proficient", description: "Fabric link verification, ibstat checks, automated node health diagnostics" },
       { name: "Parallel Filesystems (Lustre / NFS)", level: "Proficient", description: "Mount verification, high-throughput I/O monitoring, cluster sanity scripting" }
     ]
   },
@@ -310,7 +407,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Python", level: "Advanced", description: "NumPy, SciPy, mpi4py, automated ETL pipelines, telemetry parsers, daily health sanity monitors" },
       { name: "Bash / Shell Scripting", level: "Advanced", description: "Automated cluster diagnostics, cron jobs, environment setup, scheduler log parsing" },
-      { name: "C / C++", level: "Proficient", description: "Systems programming, data structures, pointer memory management, CS 241L/341L" },
+      { name: "C / C++", level: "Proficient", description: "Systems programming, data structures, pointer memory management" },
       { name: "SQL", level: "Proficient", description: "PostgreSQL schema design, time-series telemetry indexing, aggregation queries" },
       { name: "MATLAB", level: "Proficient", description: "Numerical analysis, finite difference discretization, matrix decompositions" },
       { name: "C# / Unity", level: "Proficient", description: "Physics systems, input buffering, gameplay architecture, OpenXR VR" },
@@ -335,64 +432,21 @@ export const skillCategories: SkillCategory[] = [
     iconName: "Binary",
     skills: [
       { name: "Linear Algebra & Vector Calculus", level: "Advanced", description: "Matrix decompositions, eigenvalues, vector fields, affine transformations (3.96 GPA)" },
-      { name: "Calculus & Analysis", level: "Advanced", description: "Real analysis, multivariate calculus, metric spaces (MATH 2531/401)" },
-      { name: "Numerical Computing & PDEs", level: "Advanced", description: "Finite difference methods, CFL stability criteria, parabolic solvers (MATH 375/471/312)" },
-      { name: "Data Structures & Algorithms", level: "Proficient", description: "Algorithmic complexity, graph algorithms, dynamic programming (CS 361L/362, A/A+)" },
-      { name: "Complex Variables", level: "Proficient", description: "Analytic functions, contour integration, residue theory (MATH 313)" }
+      { name: "Calculus & Real Analysis", level: "Advanced", description: "Real analysis, multivariate calculus, metric spaces" },
+      { name: "Numerical Computing & PDEs", level: "Advanced", description: "Finite difference methods, CFL stability criteria, parabolic solvers" },
+      { name: "Data Structures & Algorithms", level: "Proficient", description: "Algorithmic complexity, graph algorithms, dynamic programming" },
+      { name: "Complex Variables", level: "Proficient", description: "Analytic functions, contour integration, residue theory" }
     ]
   },
   {
-    category: "Tools, Version Control & Hardware",
+    category: "Tools & Hardware",
     iconName: "Terminal",
     skills: [
       { name: "Git, GitHub & LoboGit", level: "Proficient", description: "CLI version control, branch management, collaborative repositories" },
       { name: "Remote Development (VSCode / Nano)", level: "Proficient", description: "SSH-based editing on remote headless cluster nodes and server environments" },
       { name: "Dedicated Server Administration", level: "Proficient", description: "Configured dedicated community server for Sandia TITANS cohort, JVM tuning, port security" },
-      { name: "Hardware & Diagnostic Testing", level: "Proficient", description: "CANbus OBD-II scan diagnostics, multimeter circuit troubleshooting, custom PC builds" }
+      { name: "Hardware & Diagnostic Testing", level: "Proficient", description: "CANbus OBD-II diagnostics, multimeter troubleshooting, custom PC builds" }
     ]
-  }
-];
-
-export const awards: AwardItem[] = [
-  {
-    id: "thunderbird",
-    title: "Intern Thunderbird Award",
-    organization: "Sandia National Laboratories",
-    date: "July 2026",
-    description: "Prestigious laboratory honor awarded for embodying laboratory core values and driving mission impact through the digital transformation of the Safeguards & Security self-assessment reporting system.",
-    badgeType: "national-lab"
-  },
-  {
-    id: "spot-award",
-    title: "Sandia SPOT Award (2x Recipient)",
-    organization: "Sandia National Laboratories",
-    date: "Awarded 2x",
-    description: "Special cash performance bonus awarded by the Center Director & Leadership for architecting and deploying an automated self-assessments reporting and business intelligence system.",
-    badgeType: "national-lab"
-  },
-  {
-    id: "era-nomination",
-    title: "Sandia Employee Recognition Award (ERA) Nominee (2x)",
-    organization: "Sandia National Laboratories",
-    date: "Nominated 2x",
-    description: "Formally nominated for an advanced approach to systems integration, cost savings, and structural improvement across laboratory operations.",
-    badgeType: "national-lab"
-  },
-  {
-    id: "summa-cum-laude",
-    title: "Summa Cum Laude Honors (3.96 / 4.0 GPA)",
-    organization: "University of New Mexico",
-    date: "May 2026",
-    description: "Conferred with highest university honors upon graduation with dual major in Mathematics and Sociology, minor in Computer Science.",
-    badgeType: "academic"
-  },
-  {
-    id: "presidential-scholarship",
-    title: "UNM Presidential Scholarship",
-    organization: "University of New Mexico",
-    date: "2023 – 2026",
-    description: "Premier academic merit award granted to the top 75 incoming freshmen across New Mexico.",
-    badgeType: "academic"
   }
 ];
 

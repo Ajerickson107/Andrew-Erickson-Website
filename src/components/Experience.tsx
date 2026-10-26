@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin, CheckCircle2, Award, Terminal, ArrowUpRight } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Award } from 'lucide-react';
 import { experiences } from '../data/resumeData';
 
 export const Experience: React.FC = () => {
@@ -10,16 +10,15 @@ export const Experience: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/[0.08]">
           <div>
-            <div className="font-mono text-xs text-sky-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-xs bg-sky-400"></span>
-              <span>// 01. Systems Engineering Appointments</span>
+            <div className="font-mono text-xs text-sky-400 uppercase tracking-wider mb-1.5">
+              Work Experience
             </div>
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-100">
-              Professional Experience & Timeline
+              Professional Experience
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-slate-400 mt-2 md:mt-0">
-            HPC Systems Monitoring, Telemetry Aggregation & Data Engineering
+          <p className="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">
+            HPC systems monitoring, telemetry pipelines, and operations
           </p>
         </div>
 
@@ -31,15 +30,15 @@ export const Experience: React.FC = () => {
             return (
               <div
                 key={exp.id}
-                className={`tactile-card rounded-xl p-6 sm:p-8 transition-all ${
+                className={`tactile-card rounded-xl p-6 sm:p-7 transition-all ${
                   isFullTime
                     ? 'border-sky-500/30 bg-[#161920]'
                     : 'border-white/[0.08] bg-[#161920]'
                 }`}
               >
                 {/* Header Row */}
-                <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-5 border-b border-white/[0.06]">
-                  <div className="space-y-1.5">
+                <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-3 pb-4 border-b border-white/[0.06]">
+                  <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2.5">
                       <h3 className="text-lg sm:text-xl font-semibold text-slate-100 tracking-tight">
                         {exp.role}
@@ -56,18 +55,18 @@ export const Experience: React.FC = () => {
                         </span>
                       )}
                     </div>
-                    <div className="text-sm sm:text-base font-medium text-slate-300 flex items-center gap-2">
-                      <span className="text-sky-400 font-semibold">{exp.company}</span>
+                    <div className="text-sm font-medium text-slate-300 flex items-center gap-2">
+                      <span className="text-sky-400 font-medium">{exp.company}</span>
                       <span className="text-slate-600">•</span>
-                      <span className="text-slate-400 flex items-center gap-1 text-xs font-mono">
-                        <MapPin className="w-3 h-3 text-slate-500" />
+                      <span className="text-slate-400 flex items-center gap-1 text-xs">
+                        <MapPin className="w-3.5 h-3.5 text-slate-500" />
                         {exp.location}
                       </span>
                     </div>
                   </div>
 
                   {/* Period badge */}
-                  <div className="flex items-center gap-2 text-xs font-mono text-slate-400 shrink-0">
+                  <div className="flex items-center gap-1.5 text-xs font-mono text-slate-400 shrink-0">
                     <Calendar className="w-3.5 h-3.5 text-slate-500" />
                     <span className="bg-[#0F1115] px-2.5 py-1 rounded border border-white/[0.08] text-slate-300">
                       {exp.period}
@@ -76,15 +75,11 @@ export const Experience: React.FC = () => {
                 </div>
 
                 {/* Highlights List */}
-                <div className="pt-5 space-y-3">
-                  <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 flex items-center gap-2">
-                    <Terminal className="w-3 h-3 text-slate-400" />
-                    <span>Key Engineering Responsibilities & Impact</span>
-                  </h4>
-                  <ul className="space-y-2.5">
+                <div className="pt-4 space-y-2">
+                  <ul className="space-y-2">
                     {exp.highlights.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2.5 text-sm text-slate-300 leading-relaxed">
-                        <span className="text-sky-400 font-mono text-xs mt-1 shrink-0">›</span>
+                        <span className="text-sky-400 font-bold mt-1 text-xs shrink-0">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -93,10 +88,10 @@ export const Experience: React.FC = () => {
 
                 {/* Awards / Recognition if present */}
                 {exp.awards && exp.awards.length > 0 && (
-                  <div className="mt-5 pt-4 border-t border-white/[0.06] flex flex-wrap items-center gap-2">
+                  <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center gap-2">
                     <span className="font-mono text-[11px] uppercase tracking-wider text-amber-400/90 flex items-center gap-1.5 mr-1">
                       <Award className="w-3.5 h-3.5 text-amber-400" />
-                      <span>Distinction:</span>
+                      <span>Recognition:</span>
                     </span>
                     {exp.awards.map((award, aIdx) => (
                       <span
@@ -109,10 +104,10 @@ export const Experience: React.FC = () => {
                   </div>
                 )}
 
-                {/* Tech Stack Pills */}
-                <div className="mt-5 pt-4 border-t border-white/[0.06] flex flex-wrap items-center gap-1.5">
+                {/* Tech / Skills Pills */}
+                <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap items-center gap-1.5">
                   <span className="font-mono text-[11px] uppercase tracking-wider text-slate-500 mr-2">
-                    Stack:
+                    Focus:
                   </span>
                   {exp.skills.map((skill) => (
                     <span

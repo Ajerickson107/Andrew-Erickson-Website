@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
-import { Terminal, GitBranch, Cpu, Activity, Gamepad2, ArrowUpRight, CheckCircle2, ChevronRight, Layers } from 'lucide-react';
+import React from 'react';
+import { GitBranch, ArrowUpRight } from 'lucide-react';
 import { projects } from '../data/resumeData';
-import { ProjectItem } from '../types';
 
 export const Projects: React.FC = () => {
-  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
-
   return (
     <section id="projects" className="py-16 md:py-24 border-b border-white/[0.08] dark:border-white/[0.08] border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,16 +10,15 @@ export const Projects: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/[0.08]">
           <div>
-            <div className="font-mono text-xs text-sky-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-xs bg-sky-400"></span>
-              <span>// 04. Technical Work & Projects</span>
+            <div className="font-mono text-xs text-sky-400 uppercase tracking-wider mb-1.5">
+              Software & Systems
             </div>
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-100">
-              High-Performance Systems & Software
+              Technical Projects
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-slate-400 mt-2 md:mt-0">
-            Telemetry Ingestion, Parallel MPI Solvers & Interactive Engines
+          <p className="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">
+            HPC telemetry pipelines, parallel numerical solvers, and interactive graphics
           </p>
         </div>
 
@@ -36,7 +32,7 @@ export const Projects: React.FC = () => {
               >
                 <div>
                   {/* Top Bar: Category & Period */}
-                  <div className="flex items-center justify-between gap-2 pb-4 border-b border-white/[0.06] text-xs font-mono">
+                  <div className="flex items-center justify-between gap-2 pb-3 border-b border-white/[0.06] text-xs font-mono">
                     <span className="px-2.5 py-0.5 rounded bg-sky-500/10 border border-sky-400/30 text-sky-300 font-medium tracking-tight">
                       {proj.category}
                     </span>
@@ -46,7 +42,7 @@ export const Projects: React.FC = () => {
                   </div>
 
                   {/* Title & Subtitle */}
-                  <div className="pt-4 space-y-1">
+                  <div className="pt-3.5 space-y-1">
                     <h3 className="text-lg sm:text-xl font-semibold text-slate-100 tracking-tight flex items-center justify-between">
                       <span>{proj.title}</span>
                       {proj.repoUrl && (
@@ -72,15 +68,15 @@ export const Projects: React.FC = () => {
                     {proj.summary}
                   </p>
 
-                  {/* Architecture Highlights */}
+                  {/* Architecture / Highlights */}
                   <div className="pt-4 space-y-2">
-                    <span className="font-mono text-xs uppercase tracking-wider text-slate-500 block">
-                      Architecture & Implementation:
+                    <span className="font-mono text-xs uppercase tracking-wider text-slate-400 block">
+                      Key Highlights:
                     </span>
                     <ul className="space-y-1.5 text-xs text-slate-300">
                       {proj.architectureDetails.slice(0, 3).map((detail, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <span className="text-sky-400 font-mono shrink-0">›</span>
+                          <span className="text-sky-400 font-bold shrink-0">•</span>
                           <span className="leading-snug">{detail}</span>
                         </li>
                       ))}
@@ -88,7 +84,7 @@ export const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Bottom Section: Technologies & Repository / Details Button */}
+                {/* Bottom Section: Technologies & Repository */}
                 <div className="mt-6 pt-4 border-t border-white/[0.06] space-y-3">
                   <div className="flex flex-wrap gap-1.5">
                     {proj.technologies.map((tech) => (

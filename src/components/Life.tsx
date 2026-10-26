@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Compass, Heart, Wrench, Mountain, Dog, Terminal } from 'lucide-react';
+import { Mountain, Dog, Wrench } from 'lucide-react';
 import { bentoItems } from '../data/resumeData';
 
 export const Life: React.FC = () => {
@@ -10,16 +10,15 @@ export const Life: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/[0.08]">
           <div>
-            <div className="font-mono text-xs text-sky-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-xs bg-sky-400"></span>
-              <span>// 05. Beyond The Terminal</span>
+            <div className="font-mono text-xs text-sky-400 uppercase tracking-wider mb-1.5">
+              Personal Interests
             </div>
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-100">
-              Field Notes, Hardware & Hobbies
+              Beyond the Terminal
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-slate-400 mt-2 md:mt-0">
-            Real-World Problem Solving, Outdoor Exploration & Companion QA
+          <p className="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">
+            Climbing, custom hardware builds, and our pugs
           </p>
         </div>
 
@@ -33,15 +32,12 @@ export const Life: React.FC = () => {
               >
                 <div>
                   {/* Card Top Tag */}
-                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/[0.06] text-xs font-mono">
+                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/[0.06] text-xs">
                     <span className="text-sky-400 font-medium flex items-center gap-1.5">
                       {idx === 0 && <Dog className="w-3.5 h-3.5 text-sky-400" />}
                       {idx === 1 && <Mountain className="w-3.5 h-3.5 text-amber-400" />}
                       {idx === 2 && <Wrench className="w-3.5 h-3.5 text-emerald-400" />}
                       <span>{item.tag}</span>
-                    </span>
-                    <span className="text-slate-500 text-[11px]">
-                      FIG. 0{idx + 2}
                     </span>
                   </div>
 
@@ -53,7 +49,7 @@ export const Life: React.FC = () => {
                       loading="lazy"
                       width="600"
                       height="450"
-                      className="w-full h-full object-cover object-center hover:scale-[1.02] transition-transform duration-300"
+                      className="w-full h-full object-cover object-center hover:scale-[1.01] transition-transform duration-300"
                     />
                   </div>
 
@@ -62,7 +58,7 @@ export const Life: React.FC = () => {
                     {item.title}
                   </h3>
                   
-                  <div className="pt-1 font-mono text-xs text-sky-400/90 font-medium">
+                  <div className="pt-1 text-xs text-sky-300 font-mono">
                     "{item.caption}"
                   </div>
 
@@ -72,10 +68,9 @@ export const Life: React.FC = () => {
                   </p>
                 </div>
 
-                {/* Bottom Spec Footer */}
-                <div className="mt-5 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-slate-500">
-                  <span>STATUS: NOMINAL</span>
-                  <span>ALBUQUERQUE, NM</span>
+                {/* Bottom Footer */}
+                <div className="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-slate-500 font-mono">
+                  <span>Albuquerque, NM</span>
                 </div>
               </div>
             );

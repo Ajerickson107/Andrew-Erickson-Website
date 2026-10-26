@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ShieldCheck, Globe, CalendarCheck, Receipt, Landmark, Terminal, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Globe, CalendarCheck, ShieldCheck, Receipt, Sparkles } from 'lucide-react';
 import { ventureData } from '../data/resumeData';
 
 export const Ventures: React.FC = () => {
@@ -10,71 +10,60 @@ export const Ventures: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/[0.08]">
           <div>
-            <div className="font-mono text-xs text-sky-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-xs bg-sky-400"></span>
-              <span>// 03. Applied Systems & Ventures</span>
+            <div className="font-mono text-xs text-sky-400 uppercase tracking-wider mb-1.5">
+              Side Venture & Operations
             </div>
             <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-100">
-              Business & Technical Infrastructure
+              Emily Erickson Massage LLC
             </h2>
           </div>
-          <p className="text-xs sm:text-sm font-mono text-slate-400 mt-2 md:mt-0">
-            End-to-End Operational Stack, DNS & Financial Compliance
+          <p className="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">
+            Business administration, website management, and operations
           </p>
         </div>
 
-        {/* Dedicated Feature Card (Half-Split Layout) */}
-        <div className="tactile-card rounded-xl border border-white/[0.1] bg-[#161920] overflow-hidden">
+        {/* Feature Card */}
+        <div className="tactile-card rounded-xl border border-white/[0.08] bg-[#161920] overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
-            {/* Visual Column (col-span-5) */}
-            <div className="lg:col-span-5 relative bg-[#0F1115] border-b lg:border-b-0 lg:border-r border-white/[0.08] flex flex-col justify-between p-4 sm:p-6">
-              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-auto lg:h-[380px] w-full overflow-hidden rounded-lg border border-white/[0.08] bg-[#0A0C0F]">
+            {/* Studio Photo Column (col-span-5) */}
+            <div className="lg:col-span-5 relative bg-[#0F1115] border-b lg:border-b-0 lg:border-r border-white/[0.08] p-4 sm:p-6 flex flex-col justify-between">
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-auto lg:h-[360px] w-full overflow-hidden rounded-lg border border-white/[0.08] bg-[#0A0C0F]">
                 <img
                   src={ventureData.image}
-                  alt="Emily Erickson Massage Studio treatment room with custom lighting installation"
+                  alt="Emily Erickson Massage Studio treatment room in Albuquerque"
                   loading="lazy"
                   width="800"
                   height="600"
-                  className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-full object-cover hover:scale-[1.01] transition-transform duration-300"
                 />
-                
-                {/* Visual Telemetry Pill */}
-                <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-black/70 backdrop-blur-xs font-mono text-[10px] text-sky-300 border border-white/10">
-                  FACILITY // ABQ, NM
-                </div>
               </div>
 
-              {/* Inset Caption */}
-              <div className="pt-3 px-1 text-xs font-mono text-slate-400 leading-snug">
+              {/* Natural Inset Caption */}
+              <div className="pt-3 px-1 text-xs text-slate-400">
                 <span className="text-slate-300 font-medium block">
-                  Studio Headquarters & Treatment Room
+                  Studio Space — Albuquerque, NM
                 </span>
                 <span className="text-[11px] text-slate-500">
-                  {ventureData.imageCaption}
+                  Treatment room and studio setup
                 </span>
               </div>
             </div>
 
-            {/* Architecture & Content Column (col-span-7) */}
+            {/* Natural Narrative Column (col-span-7) */}
             <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between space-y-6">
               
-              <div>
+              <div className="space-y-4">
                 {/* Header Row */}
-                <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/[0.06]">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-white/[0.06]">
                   <div>
-                    <div className="flex items-center gap-2">
-                      <span className="px-2.5 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-mono text-[11px] font-medium tracking-tight">
-                        {ventureData.status}
-                      </span>
-                      <span className="font-mono text-xs text-slate-400">
-                        {ventureData.period}
-                      </span>
-                    </div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-slate-100 tracking-tight pt-2">
+                    <span className="text-xs font-mono text-emerald-400 font-medium">
+                      Active Private Practice
+                    </span>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-slate-100 tracking-tight pt-1">
                       {ventureData.title}
                     </h3>
-                    <div className="text-sm font-mono text-sky-400 pt-0.5">
+                    <div className="text-xs sm:text-sm text-slate-400 pt-0.5">
                       Role: {ventureData.role}
                     </div>
                   </div>
@@ -85,56 +74,48 @@ export const Ventures: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#0F1115] hover:bg-[#1C2029] border border-white/[0.12] hover:border-sky-400/50 text-sky-300 font-mono text-xs transition-colors shrink-0"
                   >
-                    <span>{ventureData.domain}</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
+                    <span>Visit Website</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
 
-                {/* Summary */}
-                <p className="pt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+                {/* Grounded, Authentic Summary */}
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
                   {ventureData.summary}
                 </p>
 
-                {/* Technical & Operational Architecture Stack */}
-                <div className="pt-5 space-y-3">
-                  <div className="font-mono text-xs uppercase tracking-wider text-slate-400 flex items-center gap-2">
-                    <Terminal className="w-3.5 h-3.5 text-sky-400" />
-                    <span>Engineered Technical & Operational Stack</span>
-                  </div>
+                {/* What I Manage Grid */}
+                <div className="pt-2 space-y-2.5">
+                  <span className="font-mono text-xs uppercase tracking-wider text-slate-400 block">
+                    What I Take Care Of:
+                  </span>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                    {ventureData.stack.map((item, idx) => {
-                      return (
-                        <div
-                          key={idx}
-                          className="p-3.5 rounded-lg bg-[#0F1115] border border-white/[0.06] space-y-1.5"
-                        >
-                          <div className="flex items-center gap-2 text-xs font-mono font-medium text-sky-300">
-                            {idx === 0 && <Globe className="w-3.5 h-3.5 text-sky-400" />}
-                            {idx === 1 && <CalendarCheck className="w-3.5 h-3.5 text-sky-400" />}
-                            {idx === 2 && <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />}
-                            {idx === 3 && <Receipt className="w-3.5 h-3.5 text-amber-400" />}
-                            <span>{item.category}</span>
-                          </div>
-                          <p className="text-xs text-slate-400 leading-relaxed font-sans">
-                            {item.details}
-                          </p>
+                    {ventureData.stack.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="p-3.5 rounded-lg bg-[#0F1115] border border-white/[0.06] space-y-1"
+                      >
+                        <div className="flex items-center gap-2 text-xs font-medium text-sky-300">
+                          {idx === 0 && <Globe className="w-3.5 h-3.5 text-sky-400" />}
+                          {idx === 1 && <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />}
+                          {idx === 2 && <Receipt className="w-3.5 h-3.5 text-amber-400" />}
+                          {idx === 3 && <Sparkles className="w-3.5 h-3.5 text-sky-400" />}
+                          <span>{item.category}</span>
                         </div>
-                      );
-                    })}
+                        <p className="text-xs text-slate-400 leading-relaxed font-sans">
+                          {item.details}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
 
-              {/* Bottom Telemetry Bar */}
-              <div className="pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-400">
-                <span className="flex items-center gap-2">
-                  <Landmark className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Licensed State of NM Establishment • City of Albuquerque</span>
-                </span>
-                <span className="text-slate-500">
-                  Cloudflare Edge • Automated GRT / Tax Accounting
-                </span>
+              {/* Bottom Note */}
+              <div className="pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+                <span>Albuquerque, New Mexico</span>
+                <span className="text-slate-400">{ventureData.domain}</span>
               </div>
 
             </div>
